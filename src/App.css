@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font: 20px "Century Gothic", Futura, sans-serif;
 }
 
 .App-logo {
@@ -14,8 +15,30 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color:darkblue;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-content {
+  background-color: antiquewhite;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-footer {
+  background-color: darkgrey;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,4 +58,69 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.game{
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  height: 80vh;
+  width: 100%;
+}
+
+.game-board{
+  background-color: whitesmoke;
+  width: 70%;
+  text-align: center;
+}
+
+ol, ul {
+  list-style: none;
+  padding-left: 30px;
+}
+
+.board{
+  border: blue;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  background: white;
+  border: 2px solid darkolivegreen;
+  float: left;
+  font-size: 75px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 125px;
+  padding: 0;
+  text-align: center;
+  width: 125px;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game-info {
+  width: 30%;
+  background-color: darkslategrey;
+}
+
+.game-status {
+  font-size: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: brown;
 }
